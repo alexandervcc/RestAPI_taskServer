@@ -1,0 +1,13 @@
+Install pacakge:
+    ~: npm install --save @sendgrid/mail
+
+MOdule for Env Variables
+    ~:npm i env-cmd --save-dev
+
+SEt Up Heroku Server
+    1. Set up git and proyect
+        ~:  heroku login
+        ~: heroku create "name"
+
+    2. Config ENv Varibales
+        ~:  heroku config:set key=value

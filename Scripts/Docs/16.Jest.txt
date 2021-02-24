@@ -1,0 +1,7 @@
+TDD
+    1. Install jest
+        ~: npm i jest
+
+    2. Test Http from App
+        ~: npm i supertest
+        

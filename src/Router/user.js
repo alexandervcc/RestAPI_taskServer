@@ -40,7 +40,7 @@ router.post("/users/login",async (req,res)=>{
             return res.status(404).send("Invalid Credentials")
         }
 
-        res.send({user,token})
+        res.status(201).send({user,token})
 
     } catch (error) {
         res.status(400).send(error)
