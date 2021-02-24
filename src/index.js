@@ -18,7 +18,7 @@ app.use(userRouter)
 app.use(taskRouter)
 
 app.get("/",(req,res)=>{
-    res.send("<h2>Cheems Server</h2>")
+    res.send("Cheems Server")
 })
 
 app.get("/users",async (req,res)=>{
