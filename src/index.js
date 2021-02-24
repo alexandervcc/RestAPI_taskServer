@@ -6,9 +6,6 @@ const express=require("express")
 const userRouter =require("./Router/user")
 const taskRouter = require("./Router/task")
 
-const User=require("./modules/user")
-require("./db/mongoose")
-
 const app=express();
 
 const port=process.env.PORT || 3000;
@@ -21,11 +18,6 @@ app.get("/",(req,res)=>{
     res.send("Cheems Server")
 })
 
-app.get("/users",async (req,res)=>{
-    const users=await User.find()
-    res.send(users)
-})
-
 app.listen(port,()=>{
-    console.log(chalk.blue.inverse.bold("Server is on port: "+port))
+    console.log(chalk.blue.inverse.bold("SERVER STARTED ON: "+port))
 });
